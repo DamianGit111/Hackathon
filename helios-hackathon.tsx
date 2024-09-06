@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Calendar, Clock, MapPin, Users, Award, Mail } from "lucide-react"
+import { Calendar, Clock, MapPin, Users, Award, Mail, Gift } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Component() {
   return (
@@ -128,6 +129,81 @@ export default function Component() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-blue-950 border-blue-800">
+          <CardHeader className="bg-blue-900">
+            <CardTitle className="text-2xl text-white">Our Sponsors</CardTitle>
+          </CardHeader>
+          <CardContent className="p-6 space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-blue-100 mb-4">Gold Sponsors</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="TechCorp Logo" width={150} height={75} />
+                </div>
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="InnovatEd Logo" width={150} height={75} />
+                </div>
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="FutureTech Logo" width={150} height={75} />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-blue-100 mb-4">Silver Sponsors</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="CodeCraft Logo" width={100} height={50} />
+                </div>
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="ByteWise Logo" width={100} height={50} />
+                </div>
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="DataDreams Logo" width={100} height={50} />
+                </div>
+                <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                  <Image src="/placeholder.svg" alt="AIFuture Logo" width={100} height={50} />
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-blue-950 border-blue-800">
+          <CardHeader className="bg-blue-900">
+            <CardTitle className="text-2xl text-white">Prizes</CardTitle>
+          </CardHeader>
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center space-x-4">
+              <Award className="w-8 h-8 text-yellow-400" />
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100">First Place</h3>
+                <p className="text-blue-200">Latest iPad Pro for each team member</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Award className="w-8 h-8 text-gray-400" />
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100">Second Place</h3>
+                <p className="text-blue-200">Noise-cancelling headphones for each team member</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Award className="w-8 h-8 text-yellow-600" />
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100">Third Place</h3>
+                <p className="text-blue-200">Smart watch for each team member</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Gift className="w-8 h-8 text-blue-400" />
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100">Special Categories</h3>
+                <p className="text-blue-200">Various tech gadgets and gift cards for innovation, teamwork, and social impact</p>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
