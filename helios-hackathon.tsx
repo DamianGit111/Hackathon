@@ -65,7 +65,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto space-y-8">
           <header className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">HackaSun: Games for the Greater Good</h1>
-            <p className="text-xl text-blue-300">5th Through 10th Grade Hackathon</p>
+            <p className="text-xl text-blue-300">5th Through 12th Grade Hackathon</p>
           </header>
 
           <Card id="about" className="bg-blue-950 border-blue-800">
@@ -74,7 +74,7 @@ export default function Component() {
             </CardHeader>
             <CardContent className="p-6 text-blue-100">
               <p>
-                HackaSun is an exciting event where 5th through 10th grade aspiring programmers come together
+                HackaSun is an exciting event where 5th through 12th grade aspiring programmers come together
                 to create games that make a positive impact on the world. Hosted by the Helios coding club, a student-run
                 programming club, this hackathon aims to spark passion and spread coding and STEM throughout the Bay Area.
               </p>
@@ -105,7 +105,7 @@ export default function Component() {
               </div>
               <div className="flex items-center">
                 <Users className="w-6 h-6 mr-2 text-blue-300" />
-                <span><strong>Who:</strong> 5th through 10th grade aspiring programmers</span>
+                <span><strong>Who:</strong> 5th through 12th grade aspiring programmers</span>
               </div>
             </CardContent>
           </Card>
