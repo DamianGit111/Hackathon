@@ -23,7 +23,15 @@ const NavBar = () => {
   return (
     <nav className="bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg p-4 sticky top-0 z-10">
       <div className="max-w-4xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-white text-xl font-bold">Helios Hackathon</Link>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DALL_E_2024-09-07_13.24.12_-_A_minimalistic_yet_vibrant_logo_for_the__Hackasun__hackathon_at_Helios_School._The_design_features_a_sleek_sun_symbol_with_rays_in_a_modern__geometric-removebg-preview-AFJNVWbEFpqmbpgL5cwRiVDBW8iC11.png"
+            alt="HackaSun Logo"
+            width={150}
+            height={75}
+            className="max-h-12 w-auto"
+          />
+        </Link>
         <div className="md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
             <Menu className="h-6 w-6 text-white" />
@@ -56,17 +64,17 @@ export default function Component() {
       <div className="p-8">
         <div className="max-w-4xl mx-auto space-y-8">
           <header className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">Helios Hackathon: Games for the Greater Good</h1>
+            <h1 className="text-4xl font-bold text-white mb-4">HackaSun: Games for the Greater Good</h1>
             <p className="text-xl text-blue-300">5th through 10th Grade Hackathon</p>
           </header>
 
           <Card id="about" className="bg-blue-950 border-blue-800">
             <CardHeader className="bg-blue-900">
-              <CardTitle className="text-2xl text-white">What is the Helios Hackathon?</CardTitle>
+              <CardTitle className="text-2xl text-white">What is HackaSun?</CardTitle>
             </CardHeader>
             <CardContent className="p-6 text-blue-100">
               <p>
-                The Helios Hackathon is an exciting event where 5th through 10th grade aspiring programmers come together
+                HackaSun is an exciting event where 5th through 10th grade aspiring programmers come together
                 to create games that make a positive impact on the world. Hosted by the Helios coding club, a student-run
                 programming club, this hackathon aims to spark passion and spread coding and STEM throughout the Bay Area.
               </p>
@@ -272,7 +280,7 @@ export default function Component() {
                 <div>
                   <h4 className="text-lg font-semibold">Silver Tier ($150-$200)</h4>
                   <ul className="list-disc list-inside">
-                    <li>Display your logo on our Helios Hackathon website</li>
+                    <li>Display your logo on our HackaSun website</li>
                     <li>Provide an official certificate of sponsorship</li>
                     <li>Mention your business at the opening and closing ceremony</li>
                     <li>Give you the opportunity to encourage STEM and computer science education locally</li>
@@ -282,7 +290,7 @@ export default function Component() {
                   <h4 className="text-lg font-semibold">Gold Tier ($200+)</h4>
                   <p>All benefits of Silver Tier, plus:</p>
                   <ul className="list-disc list-inside">
-                    <li>Display your logo on Helios Hackathon t-shirts</li>
+                    <li>Display your logo on HackaSun t-shirts</li>
                     <li>Send promotional emails of your business to all participants</li>
                   </ul>
                 </div>
