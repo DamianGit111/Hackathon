@@ -65,7 +65,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto space-y-8">
           <header className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">HackaSun: Games for the Greater Good</h1>
-            <p className="text-xl text-blue-300">5th through 10th Grade Hackathon</p>
+            <p className="text-xl text-blue-300">5th Through 10th Grade Hackathon</p>
           </header>
 
           <Card id="about" className="bg-blue-950 border-blue-800">
