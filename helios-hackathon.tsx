@@ -246,8 +246,8 @@ export default function Component() {
               <p>To become a sponsor or for more information, please contact us:</p>
               <div className="flex items-center mt-2">
                 <Mail className="w-6 h-6 mr-2 text-blue-300" />
-                <a href="mailto:sponsor@helioshackathon.com" className="text-blue-400 hover:underline">
-                  sponsor@helioshackathon.com
+                <a href="mailto:sponsorhelioshacks@gmail.com" className="text-blue-400 hover:underline">
+                  sponsorhelioshacks@gmail.com
                 </a>
               </div>
             </div>
