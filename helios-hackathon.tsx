@@ -270,9 +270,13 @@ export default function Component() {
         </Card>
 
         <div className="text-center">
-          <Button className="text-lg py-6 px-8 bg-blue-600 hover:bg-blue-700 text-white">
-            Register Now and Start Your Coding Adventure!
-          </Button>
+          <Link href="https://forms.gle/unt6zTrqDhgAQozL7" passHref>
+            <Button className="text-lg py-6 px-8 bg-blue-600 hover:bg-blue-700 text-white" asChild>
+              <a target="_blank" rel="noopener noreferrer">
+                Register Now and Start Your Coding Adventure!
+              </a>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
