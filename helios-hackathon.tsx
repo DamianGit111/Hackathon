@@ -110,6 +110,54 @@ export default function Component() {
             </CardContent>
           </Card>
 
+          <Card id="speakers" className="bg-blue-950 border-blue-800">
+            <CardHeader className="bg-blue-900">
+              <CardTitle className="text-2xl text-white">Guest Speakers</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 text-blue-100">
+              <ul className="list-disc list-inside space-y-2">
+                <li>Jane Doe - CEO of Tech Innovators</li>
+                <li>John Smith - Game Developer at Awesome Games Studio</li>
+                <li>Dr. Emily Johnson - Computer Science Professor at Bay Area University</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card id="judges" className="bg-blue-950 border-blue-800">
+            <CardHeader className="bg-blue-900">
+              <CardTitle className="text-2xl text-white">Guest Judges</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Card className="bg-blue-900 border-blue-700">
+                <CardHeader>
+                  <CardTitle className="text-lg text-white">Michael Brown</CardTitle>
+                </CardHeader>
+                <CardContent className="text-blue-200">
+                  <p>Founder of Educational Games Inc.</p>
+                  <p className="mt-2 text-sm">Expert in gamification for education</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-blue-900 border-blue-700">
+                <CardHeader>
+                  <CardTitle className="text-lg text-white">Sarah Lee</CardTitle>
+                </CardHeader>
+                <CardContent className="text-blue-200">
+                  <p>Lead Designer at Social Impact Games</p>
+                  <p className="mt-2 text-sm">Specializes in games for social change</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-blue-900 border-blue-700">
+                <CardHeader>
+                  <CardTitle className="text-lg text-white">David Wilson</CardTitle>
+                </CardHeader>
+                <CardContent className="text-blue-200">
+                  <p>STEM Education Coordinator for Sunnyvale School District</p>
+                  <p className="mt-2 text-sm">Advocate for tech in schools</p>
+                </CardContent>
+              </Card>
+            </CardContent>
+          </Card>
+
           <Card id="faq" className="bg-blue-950 border-blue-800">
             <CardHeader className="bg-blue-900">
               <CardTitle className="text-2xl text-white">Frequently Asked Questions</CardTitle>
@@ -174,6 +222,45 @@ export default function Component() {
             </CardContent>
           </Card>
 
+          <Card id="sponsors" className="bg-blue-950 border-blue-800">
+            <CardHeader className="bg-blue-900">
+              <CardTitle className="text-2xl text-white">Our Sponsors</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100 mb-4">Gold Sponsors</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="TechCorp Logo" width={150} height={75} />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="InnovatEd Logo" width={150} height={75} />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="FutureTech Logo" width={150} height={75} />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-blue-100 mb-4">Silver Sponsors</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="CodeCraft Logo" width={100} height={50} />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="ByteWise Logo" width={100} height={50} />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="DataDreams Logo" width={100} height={50} />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg flex items-center justify-center">
+                    <Image src="/placeholder.svg" alt="AIFuture Logo" width={100} height={50} />
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card id="prizes" className="bg-blue-950 border-blue-800">
             <CardHeader className="bg-blue-900">
               <CardTitle className="text-2xl text-white">Prizes</CardTitle>
@@ -229,6 +316,53 @@ export default function Component() {
                       <p className="text-blue-200">1 Month of ChatGPT 4</p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card id="sponsorship" className="bg-blue-950 border-blue-800">
+            <CardHeader className="bg-blue-900">
+              <CardTitle className="text-2xl text-white">Sponsorship Information</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 space-y-4 text-blue-100">
+              <h3 className="text-xl font-semibold">Why be a sponsor?</h3>
+              <ul className="list-disc list-inside space-y-2">
+                <li>To support youth engagement in STEM</li>
+                <li>To help young people make their community a better place</li>
+                <li>To gain community visibility for your business</li>
+                <li>To spark a fascination with computer science</li>
+              </ul>
+              <h3 className="text-xl font-semibold">How will funds be used?</h3>
+              <p>Donations will be used for prizes, materials, and food for the participants.</p>
+              <h3 className="text-xl font-semibold">Sponsorship Tiers</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-semibold">Silver Tier ($150-$200)</h4>
+                  <ul className="list-disc list-inside">
+                    <li>Display your logo on our HackaSun website</li>
+                    <li>Provide an official certificate of sponsorship</li>
+                    <li>Mention your business at the opening and closing ceremony</li>
+                    <li>Give you the opportunity to encourage STEM and computer science education locally</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Gold Tier ($200+)</h4>
+                  <p>All benefits of Silver Tier, plus:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Display your logo on HackaSun t-shirts</li>
+                    <li>Send promotional emails of your business to all participants</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold">How to sponsor</h3>
+                <p>To become a sponsor or for more information, please contact us:</p>
+                <div className="flex items-center mt-2">
+                  <Mail className="w-6 h-6 mr-2 text-blue-300" />
+                  <a href="mailto:sponsorhelioshacks@gmail.com" className="text-blue-400 hover:underline">
+                    sponsorhelioshacks@gmail.com
+                  </a>
                 </div>
               </div>
             </CardContent>
